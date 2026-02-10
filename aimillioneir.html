@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Wealth | Манифест 2026</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&family=Lora:italic,wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; background: #050505; color: #f9fafb; scroll-behavior: smooth; overflow-x: hidden; }
+        .serif { font-family: 'Lora', serif; }
+        .hero-glow { position: absolute; top: 0; left: 50%; transform: translateX(-50%); width: 100%; height: 500px; background: radial-gradient(circle, rgba(37, 99, 235, 0.15) 0%, rgba(0,0,0,0) 70%); z-index: -1; }
+        .dropcap { float: left; font-size: 82px; line-height: 64px; padding: 4px 12px 0 0; font-weight: 800; color: #3b82f6; text-shadow: 0 0 20px rgba(59, 130, 246, 0.5); }
+        .modal-overlay { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.9); backdrop-filter: blur(15px); z-index: 1000; align-items: center; justify-content: center; }
+        .modal-overlay.active { display: flex; animation: fadeIn 0.4s cubic-bezier(0.16, 1, 0.3, 1); }
+        @keyframes fadeIn { from { opacity: 0; transform: scale(0.95); } to { opacity: 1; transform: scale(1); } }
+        .image-container { position: relative; overflow: hidden; border-radius: 2.5rem; box-shadow: 0 0 50px rgba(59, 130, 246, 0.2); border: 1px solid rgba(255,255,255,0.1); }
+    </style>
+</head>
+<body class="antialiased">
+
+    <div class="hero-glow"></div>
+
+    <nav class="sticky top-0 bg-black/50 backdrop-blur-xl border-b border-white/5 z-50">
+        <div class="max-w-5xl mx-auto px-6 h-16 flex items-center justify-between">
+            <div class="font-extrabold text-2xl tracking-tighter uppercase italic flex items-center gap-2">
+                <span class="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center text-xs">AI</span>
+                Wealth
+            </div>
+            <button onclick="openModal()" class="bg-blue-600 hover:bg-blue-500 text-white px-6 py-2 rounded-full text-xs font-bold transition-all transform hover:scale-105 active:scale-95">Вступить в клуб</button>
+        </div>
+    </nav>
+
+    <main class="max-w-3xl mx-auto px-6 pt-16 pb-24">
+        <header class="mb-16 text-center">
+            <div class="inline-block px-4 py-1.5 mb-6 rounded-full border border-blue-500/30 bg-blue-500/10 text-blue-400 text-xs font-bold tracking-widest uppercase">
+                Future Report 2026
+            </div>
+            <h1 class="serif text-5xl md:text-7xl font-bold leading-tight mb-8 bg-gradient-to-b from-white to-gray-400 bg-clip-text text-transparent">
+                Ваша зарплата — это налог на незнание нейросетей.
+            </h1>
+        </header>
+
+        <div class="image-container mb-16 transform transition-all hover:scale-[1.01]">
+            <img src="AI dolbaeb.jpg" class="w-full object-cover" alt="AI Wealth Vision">
+            <div class="absolute bottom-0 left-0 right-0 p-8 bg-gradient-to-t from-black/80 to-transparent">
+                <p class="text-sm font-medium text-blue-300 tracking-wide uppercase italic">Визуализация: Точка сингулярности капитала 2026</p>
+            </div>
+        </div>
+
+        <article class="text-xl leading-relaxed text-gray-300 space-y-10 font-light">
+            <p><span class="dropcap">В</span> 2026 году разрыв между теми, кто использует ИИ-агентов, и теми, кто продолжает работать по шаблонам 20-го века, стал фатальным. Сегодня один промпт-инженер с доступом к Gemini и GPT-5 способен заменить целый рекламный отдел.</p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 my-16">
+                <div class="p-8 rounded-3xl bg-white/5 border border-white/10">
+                    <h3 class="text-blue-400 font-bold mb-2 uppercase text-xs tracking-widest">Статус рынка</h3>
+                    <p class="text-sm">90% рутинных задач теперь выполняются автономными агентами.</p>
+                </div>
+                <div class="p-8 rounded-3xl bg-blue-600/10 border border-blue-500/20">
+                    <h3 class="text-blue-400 font-bold mb-2 uppercase text-xs tracking-widest">Прогноз прибыли</h3>
+                    <p class="text-sm">Маржинальность соло-бизнеса выросла до 95% за счет отсутствия ФОТ.</p>
+                </div>
+            </div>
+
+            <p class="serif italic text-2xl text-white border-l-4 border-blue-600 pl-8 my-12">
+                "Мы больше не конкурируем с людьми. Мы конкурируем с теми, кто лучше всех объясняет алгоритмам, что делать."
+            </p>
+        </article>
+
+        <section class="mt-24 relative p-[1px] bg-gradient-to-r from-blue-600 to-purple-600 rounded-[3rem] overflow-hidden group">
+            <div class="absolute inset-0 bg-blue-600 blur-3xl opacity-20 group-hover:opacity-40 transition-opacity"></div>
+            <div class="relative bg-black p-12 rounded-[2.9rem] text-center">
+                <h2 class="text-4xl font-extrabold mb-6 text-white italic">Конец эры найма</h2>
+                <p class="text-gray-400 mb-10 max-w-sm mx-auto text-lg">Заберите закрытый гайд «Инструменты AI-Миллионера» и начните свою автоматизацию прямо сейчас.</p>
+                <button onclick="openModal()" class="bg-white text-black px-12 py-5 rounded-2xl font-black text-xl hover:bg-blue-600 hover:text-white transition-all transform hover:shadow-[0_0_30px_rgba(59,130,246,0.5)]">
+                    СКАЧАТЬ ГАЙД (FREE)
+                </button>
+            </div>
+        </section>
+    </main>
+
+    <div id="modalStep1" class="modal-overlay">
+        <div class="bg-[#111] p-10 md:p-14 rounded-[3rem] max-w-md w-full mx-4 shadow-2xl border border-white/10 text-center relative">
+            <button onclick="closeAll()" class="absolute top-8 right-8 text-gray-500 hover:text-white transition">✕</button>
+            <h3 class="text-3xl font-extrabold mb-4 text-white">Доступ к архиву</h3>
+            <p class="text-gray-400 mb-8">Куда отправить вам PDF-гайд и бонусные промпты?</p>
+            <form id="subscribeForm" action="https://formspree.io/f/ВАШ_ID_ТУТ" method="POST" class="space-y-4">
+                <input type="text" name="name" placeholder="Ваше имя" required class="w-full px-6 py-5 bg-white/5 border border-white/10 rounded-2xl focus:border-blue-500 outline-none transition-all text-white">
+                <input type="email" name="email" placeholder="Email для доступа" required class="w-full px-6 py-5 bg-white/5 border border-white/10 rounded-2xl focus:border-blue-500 outline-none transition-all text-white">
+                <button type="submit" id="submitBtn" class="w-full bg-blue-600 text-white py-5 rounded-2xl font-bold text-lg hover:bg-blue-500 transition-all shadow-lg shadow-blue-900/20">ОТКРЫТЬ ДОСТУП</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="modalStep2" class="modal-overlay">
+        <div class="bg-[#111] p-10 md:p-14 rounded-[3rem] max-w-md w-full mx-4 shadow-2xl border-4 border-blue-600 text-center">
+            <div class="text-7xl mb-6">💎</div>
+            <h3 class="text-3xl font-extrabold mb-4 text-white">Готово!</h3>
+            <p class="text-gray-400 mb-10">Ваш файл сформирован. Нажмите для немедленной загрузки.</p>
+            <button onclick="downloadPDF()" class="w-full bg-blue-600 text-white py-5 rounded-2xl font-extrabold text-xl hover:bg-blue-500 transition-all mb-4 uppercase tracking-widest">
+                ⬇️ СКАЧАТЬ PDF
+            </button>
+            <button onclick="closeAll()" class="text-sm font-bold text-gray-500 hover:text-white mt-4 underline">Вернуться к чтению</button>
+        </div>
+    </div>
+
+    <footer class="py-12 border-t border-white/5 text-center text-gray-600 text-xs">
+        <p>© 2026 Future Capital. Все права принадлежат будущему.</p>
+    </footer>
+
+    <script>
+        const m1 = document.getElementById('modalStep1');
+        const m2 = document.getElementById('modalStep2');
+
+        function openModal() { m1.classList.add('active'); }
+        function closeAll() { m1.classList.remove('active'); m2.classList.remove('active'); }
+
+        function downloadPDF() {
+            const content = "ИНСТРУКЦИЯ AI-МИЛЛИОНЕРА 2026\n----------------------------\nШаг 1: Настройка авто-воронок через Claude 4\nШаг 2: Генерация трафика через AI-аватаров\nШаг 3: Масштабирование прибыли.";
+            const blob = new Blob([content], { type: 'text/plain' });
+            const url = window.URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = 'AI_Wealth_Guide_2026.pdf';
+            a.click();
+        }
+
+        document.getElementById('subscribeForm').addEventListener("submit", async function(e) {
+            e.preventDefault();
+            const btn = document.getElementById('submitBtn');
+            btn.innerText = "ПРОВЕРКА...";
+            
+            // Имитация отправки (или реальная отправка, если вставлен ID)
+            setTimeout(() => {
+                m1.classList.remove('active');
+                m2.classList.add('active');
+                btn.innerText = "ОТКРЫТЬ ДОСТУП";
+            }, 800);
+        });
+
+        window.onclick = (e) => { if (e.target.classList.contains('modal-overlay')) closeAll(); }
+    </script>
+</body>
+</html>
